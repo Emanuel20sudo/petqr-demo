@@ -1,1 +1,127 @@
+/* ===== PETQR 2.0 ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f8fb;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#1976d2,#42a5f5);
+    color:white;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    margin:20px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.button{
+    display:inline-block;
+    padding:14px 28px;
+    margin:10px;
+    background:#1976d2;
+    color:white;
+    text-decoration:none;
+    border-radius:12px;
+    transition:.3s;
+    font-weight:bold;
+}
+
+.button:hover{
+    background:#125ea8;
+}
+
+.button-green{
+    background:#2e7d32;
+}
+
+.button-green:hover{
+    background:#1b5e20;
+}
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+footer{
+    margin-top:50px;
+    background:#0d47a1;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin:10px 0;
+    border-radius:10px;
+    border:1px solid #ccc;
+}
+
+img{
+    max-width:100%;
+    border-radius:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:34px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.button{
+display:block;
+width:100%;
+margin:10px 0;
+}
+
+}
 
