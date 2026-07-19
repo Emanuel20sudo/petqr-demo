@@ -2,43 +2,62 @@
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>PetQR - Perfil de mascota</title>
+<title>PetQR - Mascota encontrada</title>
 
 <style>
 
 body{
-    font-family: Arial, sans-serif;
-    background:#eef6ff;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f8fb;
     margin:0;
     color:#333;
 }
 
 header{
-    background:#1976d2;
+    background:linear-gradient(135deg,#1565c0,#42a5f5);
     color:white;
     text-align:center;
-    padding:25px;
+    padding:30px;
+}
+
+.logo{
+    font-size:35px;
+    font-weight:bold;
 }
 
 .container{
     max-width:500px;
     margin:30px auto;
-    background:white;
-    padding:25px;
-    border-radius:20px;
-    box-shadow:0 5px 15px #ccc;
-    text-align:center;
+    padding:20px;
 }
 
-.pet-image{
-    font-size:80px;
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.photo{
+    width:150px;
+    height:150px;
+    background:#ddd;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:70px;
 }
 
 .info{
     text-align:left;
+    margin-top:20px;
     background:#f5f5f5;
     padding:15px;
     border-radius:15px;
@@ -46,59 +65,85 @@ header{
 
 .button{
     display:block;
-    background:#1976d2;
-    color:white;
-    text-decoration:none;
     padding:15px;
-    margin-top:20px;
+    margin-top:15px;
     border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
 }
 
 .call{
-    background:#28a745;
+    background:#1976d2;
+}
+
+.whatsapp{
+    background:#25D366;
+}
+
+.message{
+    margin-top:20px;
+    color:#555;
+    font-style:italic;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#777;
 }
 
 </style>
 
 </head>
 
+
 <body>
+
 
 <header>
 
-<h1>🐾 PetQR</h1>
+<div class="logo">
+🐾 PetQR
+</div>
 
 <p>Mascota encontrada</p>
 
 </header>
 
 
+
 <div class="container">
 
 
-<div class="pet-image">
+<div class="card">
+
+
+<div class="photo">
 🐶
 </div>
 
 
-<h2>Luna</h2>
+<h1>Luna</h1>
 
-<p>¡Hola! Soy Luna. Si me encontraste, por favor contacta a mi familia.</p>
+<p>
+Si encontraste a esta mascota, por favor ayuda a reunirla con su familia.
+</p>
+
 
 
 <div class="info">
 
-<p><b>Nombre:</b> Luna</p>
+<p><b>🐕 Raza:</b> Golden Retriever</p>
 
-<p><b>Raza:</b> Golden Retriever</p>
+<p><b>🎂 Edad:</b> 3 años</p>
 
-<p><b>Edad:</b> 3 años</p>
+<p><b>🎨 Color:</b> Dorado</p>
 
-<p><b>Color:</b> Dorado</p>
-
-<p><b>Información:</b> Es amigable y responde a su nombre.</p>
+<p><b>📌 Estado:</b> Buscando a su dueño</p>
 
 </div>
+
 
 
 <a class="button call" href="tel:+000000000">
@@ -106,14 +151,34 @@ header{
 </a>
 
 
-<a class="button" href="index.html">
-⬅ Volver a PetQR
+<a class="button whatsapp" href="#">
+💬 Contactar por WhatsApp
 </a>
+
+
+
+<div class="message">
+
+"Gracias por ayudar a una mascota a volver a casa ❤️"
+
+</div>
 
 
 </div>
 
 
+</div>
+
+
+
+<footer>
+
+PetQR © 2026
+
+</footer>
+
+
 </body>
 
 </html>
+
